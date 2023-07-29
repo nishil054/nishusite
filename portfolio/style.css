@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    background-color: rgb(35 11 11);
+    /* width: 100vw; */
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(175, 175, 241);
+}
+
+.left{
+    font-size: 1.5rem;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 60px 0; */
+    height: 95vh;
+}
+
+/* .firstSection > div{
+    width: 30%;
+} */
+
+.leftSection{
+    width: 30%;
+    /* background-color: red; */
+    font-weight: 800;
+    font-size: 3rem;
+    /* margin: 290px 0; */
+}
+
+.rightSection{
+    position: relative;
+    /* background-color: red; */
+    left: 25px;
+}
+
+.rightSection img{
+    width: 70%;
+}
+
+.namecolor{
+    color: rgb(154, 98, 207);
+}
+
+#element{
+    color: rgb(154, 98, 207);
+    color: rgb(154, 98, 207);
+}
+
+.buttons{
+    display: none;
+}
+
+.hr{
+    /* border: 0; */
+    background-color: rgb(154, 98, 207);
+    margin: 40px 84px;
+    height: 1.2px;
+}
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 100vh;
+}
+
+.secondSection h1{
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    top: 18px;
+}
+
+.internshiptimeline{
+    background: white;
+    height: 1px;
+    width: 80vw;
+    display: flex;
+    margin: 80px 0;
+}
+
+.vertical{
+    background-color: white;
+    height: 65px;
+    width: 1px;
+    margin: 0 255px;
+}
+
+.vertitle{
+    position: relative;
+    top: 70px;
+    right: 160px;
+    width: 339px;
+    /* display: flex; */
+    text-align: center;
+    font-weight: bolder;
+    font-size: 27px;
+    color: #2efff7;
+}
+
+.work{
+    position: relative;
+    top: 75px;
+    width: 215px;
+    /* display: flex; */
+    text-align: center;
+    right: 100px;
+    font-size: 18px;
+}
+
+footer{
+    background-color: rgb(15 9 61);
+    height: 230px;
+}
+
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin: 15px;
+}
+
+.lang-learned{
+    /* margin: 230px 0; */
+    margin-top: 220px;
+    color: #a7a7a7;
+}
+.lang-learned h1{
+    color: #2efff7;
+}
+
+/* .hr{
+    background-color: rgb(154, 98, 207);
+    margin: 40px 84px;
+    height: 1.2px;
+} */
+
+.horizontal-langs{
+    border-bottom: 2px solid white;
+    border-left: 2px solid;
+    width: 20px;
+    padding: 5px;
+}
+
+.lang-name{
+    font-size: 1.3rem;
+    position: relative;
+    top: 19px;
+    left: 30px;
+    font-weight: bold;
+    width: 14vw;
+}
+
+.second-hr{
+    background-color: rgb(154, 98, 207);
+    margin: 40px -98px;
+    height: 1px;
+    width: 1735px;
+    position: relative;
+    top: 190px;
+}
+
+lang-li{
+        position: relative;
+        top: 50px;
+        width: 35vw;
+        display: block;
+        left: 675px;
+}
+
+
+/* Responsive CSS Start Here! */
+
+@media screen and (max-width: 1832px) {
+
+
+    .leftSection{
+        font-size: 2.2rem;
+    }
+
+    .rightSection img {
+        width: 52%;
+    }
+
+    .vertical{
+        margin: 0 182px;
+    }
+
+    .second-hr{
+        width: auto;
+    }
+
+    lang-li {
+        left: 465px;
+    }
+
+    .secondSection{
+        height: 150vh;
+    }
+
+    .lang-name{
+        top: 23px;
+        width: 17vw;
+    }
+
+}
+
+/* Mobile Responsive Design Below */
+
+@media screen and (max-width: 1200px) {
+
+    html{
+        width: 100%;
+    }
+    
+    nav{
+        height: 50px;
+        /* width: 100vw; */
+    }
+
+    .left {
+        font-size: 1.2rem;
+    }
+
+    .right{
+        display: none;
+    }
+      
+    .firstSection{
+        /* background-color: #2efff7; */
+        flex-direction: column-reverse;
+        height: 94vh;
+        justify-content: space-evenly;
+
+    }
+
+    .leftSection{
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    /* .firstSection > div {
+        width: 85%;
+    } */
+
+    .rightSection {
+        left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSection img {
+        width: 47%;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        /* position: relative;
+        right: 18px; */
+    }
+    
+    .buttons .btn a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+
+    .btn{
+        height: 40px;
+        width: 110px;
+        background-color: #6d1eb7;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .second-hr {
+        width: auto;
+        margin: auto;
+    }    
+
+
+    .internshiptimeline{
+        flex-direction: column;
+    }
+
+    .vertical {
+        /* height: unset; */
+        position: relative;
+        top: 2px;
+        border-bottom: 1px solid white;
+        border-left: 1px solid;
+        width: 20px;
+        padding: 5px;
+        margin: 0px;
+        background-color: black;
+    }
+
+    .vertitle{
+        text-align: left;
+        top: 28px;
+        left: 35px;
+        font-size: 20px;
+    }
+
+    .work{
+        text-align: left;
+        top: 27px;
+        left: 35px;
+        font-size: 15px;
+    }
+
+    .lang-name {
+        top: 23px;
+        width: 60vw;
+    }
+
+    lang-li {
+        height: 415px;
+        left: 0;
+    }
+
+    .secondSection {
+        height: 120vh;
+    }
+
+}
